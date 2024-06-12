@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <form name="cadastro" onsubmit="alert('Cadastro enviado');" autocomplete="on" method="post" action="#">
+        Nome:  <input type="text" name="nome" /><br>
+        Idade: <input type="number" name="idade" /><br>
+        Senha: <input type="text" name="password" /><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Tag input e seus tipos para formulário</h2>
+    <hr />
+    <form>
+        <label>Texto: <input type="text"></label><br>
+        <label>Número: <input type="number"></label><br>
+        <label>Alcance: <input type="range"></label><br>
+        <label>Cor: <input type="color" value="#ff0000"></label><br>
+        <label>E-mail: <input type="email"></label><br>
+        <label>Data: <input type="date"></label><br>
+        <label>Arquivo: <input type="file"></label><br>
+
+        Estado
+        <label>Casado <input type="checkbox"></label><label>Solteiro <input type="checkbox"></label><br>
+        <label>Opção <input type="radio" name="aceita" /><input type="radio" name="aceita" /><br>
+
+        <label>Botão: <input type="button" value="Enviar"></label><br>
+
+
+    </form>
+
+
+</body>
+</html>
