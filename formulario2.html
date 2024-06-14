@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com checkbox e radio</title>
+</head>
+<body>
+    <form method="post">
+        <h3>Você selecionou: Pizza de Calabresa</h3>
+        <p>Quais opcionais você deseja?</p>
+        <! usando o metodo post, deixamos o name com um único nome "opcional" 
+        para que ele etenda que é uma lista ao enviar as opções>
+        <input type="checkbox" disabled name="opcional[]" value="queijo"> + queijo<br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa<br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona<br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola<br>
+        <! tipo radio precisamos manter com o mesmo nome, pois só é possível fazer uma seleção>
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value=nao">Não<br>
+
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="suco">Suco<br>
+        <input type="radio" name="bebida" value="refrigerante">Refrigente<br>
+        <input type="radio" name="bebida" value="agua">Água<br>
+        <input type="radio" name="bebida" value="nenhum">Nenhum<br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar informações">
+
+    </form>
+</body>
+</html>
