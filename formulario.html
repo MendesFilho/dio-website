@@ -7,9 +7,19 @@
 </head>
 <body>
     <form name="cadastro" onsubmit="alert('Cadastro enviado');" autocomplete="on" method="post" action="#">
-        Nome:  <input type="text" name="nome" /><br>
-        Idade: <input type="number" name="idade" /><br>
-        Senha: <input type="text" name="password" /><br>
+       <label>Nome:  <input type="text" name="nome" /></label> <br>
+       <label>Idade: <input type="number" name="idade" /></label> <br>
+       <label>Cargo</label>
+       <select name="cargo">
+       <option value="">Selecione o cargo</option>
+       <option value="gerente">Gerente</option>
+       <option value="diretor">Diretor</option>
+       <option value="presidente">Presidente</option>
+       </select><br>
+
+       <label>Mensagem:</label>
+       <textarea rows="5" cols="10" name="mensagem" id=""></textarea>
+
         <button type="submit">Enviar</button>
     </form>
 
